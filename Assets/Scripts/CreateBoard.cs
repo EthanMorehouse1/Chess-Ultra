@@ -4,39 +4,36 @@ using UnityEngine;
 
 public class CreateBoard : MonoBehaviour
 {
-
-    public Color lightSquare;
-    public Color darkSquare;
+    public GameObject lightSquare;
+    public GameObject darkSquare;
+    public GameObject riverSquare;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CreateGraphicalBoard();
     }
 
     void CreateGraphicalBoard()
     {
         for(int file = 0; file < 8; file++)
         {
-            for(int rank = 0; rank < 8; rank++)
+            for(int rank = 0; rank < 9; rank++)
             {
                 bool isLightSquare = (file + rank) % 2 != 0;
-
-                var squareColor = (isLightSquare) ? lightSquare : darkSquare;
                 var position = new Vector2(-3.5f + file, -3.5f + rank);
-
-                
+                if(rank == 4)
+                {
+                    Instantiate(riverSquare, position, Quaternion.identity);
+                }
+                else if(rank != 4 && isLightSquare == false)
+                {
+                    Instantiate(darkSquare, position, Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(lightSquare, position, Quaternion.identity);
+                }
             }
         }
-    }
-
-    void DrawBoard()
-    {
-
     }
 }
