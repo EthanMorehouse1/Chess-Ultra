@@ -93,9 +93,29 @@ public class CreateBoard : MonoBehaviour
         {
             Instantiate(whitePawn, pos, Quaternion.identity);   
         }
-        if (i == 1 || i == 6)
+        if (i == 64 || i == 71)
         {
-            Instantiate(whiteKnight, pos, Quaternion.identity);
+            Instantiate(blackRook, pos, Quaternion.identity);
+        }
+        if (i == 65 || i == 70)
+        {
+            Instantiate(blackKnight, pos, Quaternion.identity);
+        }
+        if (i == 66 || i == 69)
+        {
+            Instantiate(blackBishop, pos, Quaternion.identity);
+        }
+        if (i == 67)
+        {
+            Instantiate(blackQueen, pos, Quaternion.identity);
+        }
+        if (i == 68)
+        {
+            Instantiate(blackKing, pos, Quaternion.identity);
+        }
+        if (i >= 56 && i <= 63)
+        {
+            Instantiate(blackPawn, pos, Quaternion.identity);
         }
     }
 }
