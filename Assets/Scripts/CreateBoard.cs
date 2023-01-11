@@ -7,6 +7,21 @@ public class CreateBoard : MonoBehaviour
     public GameObject lightSquare;
     public GameObject darkSquare;
     public GameObject riverSquare;
+
+    public GameObject whiteRook;
+    public GameObject whiteKnight;
+    public GameObject whiteBishop;
+    public GameObject whiteQueen;
+    public GameObject whiteKing;
+    public GameObject whitePawn;
+
+    public GameObject blackRook;
+    public GameObject blackKnight;
+    public GameObject blackBishop;
+    public GameObject blackQueen;
+    public GameObject blackKing;
+    public GameObject blackPawn;
+
     public GameObject[] squares;
     int i;
     // Start is called before the first frame update
@@ -27,6 +42,7 @@ public class CreateBoard : MonoBehaviour
                 if(rank == 4)
                 {
                     Instantiate(riverSquare, position, Quaternion.identity);
+                    CreatePieces(position);
 
                     squares[i] = riverSquare;
                     i++;
@@ -34,6 +50,7 @@ public class CreateBoard : MonoBehaviour
                 else if(rank != 4 && isLightSquare == false)
                 {
                     Instantiate(darkSquare, position, Quaternion.identity);
+                    CreatePieces(position);
 
                     squares[i] = darkSquare;
                     i++;
@@ -41,11 +58,44 @@ public class CreateBoard : MonoBehaviour
                 else
                 {
                     Instantiate(lightSquare, position, Quaternion.identity);
+                    CreatePieces(position);
 
                     squares[i] = lightSquare;
                     i++;
                 }
             }
+        }
+    }
+
+    void CreatePieces(Vector2 pos)
+    {
+        if(i == 0 || i == 7)
+        {
+            Instantiate(whiteRook, pos, Quaternion.identity);
+        }
+        if(i == 1 || i == 6)
+        {
+            Instantiate(whiteKnight, pos, Quaternion.identity);
+        }
+        if (i == 2 || i == 5)
+        {
+            Instantiate(whiteBishop, pos, Quaternion.identity);
+        }
+        if (i == 3)
+        {
+            Instantiate(whiteQueen, pos, Quaternion.identity);
+        }
+        if (i == 4)
+        {
+            Instantiate(whiteKing, pos, Quaternion.identity);
+        }
+        if(i >= 8 && i <= 15)
+        {
+            Instantiate(whitePawn, pos, Quaternion.identity);   
+        }
+        if (i == 1 || i == 6)
+        {
+            Instantiate(whiteKnight, pos, Quaternion.identity);
         }
     }
 }
