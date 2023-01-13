@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &656877045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656877047}
+  - component: {fileID: 656877046}
+  m_Layer: 0
+  m_Name: MouseInteraction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &656877046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656877045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b355996a7c33e42a2aa3f5af70c43bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &656877047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656877045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1208068684
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,6 +283,91 @@ MonoBehaviour:
   lightSquare: {fileID: 5273417944079806849, guid: 5219435e4c08e4c10b1cd29b1d4e29d8, type: 3}
   darkSquare: {fileID: 4808044325138281831, guid: 9cd53965006ca4d7886cef47b1c2695c, type: 3}
   riverSquare: {fileID: 6867990289923111829, guid: a41ccd24020374ec39712e412d6a5dc5, type: 3}
+  whiteRook: {fileID: 508272894939286891, guid: 92a4a2fcc455340b89f310dde700cf89, type: 3}
+  whiteKnight: {fileID: 3535898728456572432, guid: 6d5b6db706ef849129111689a2563abb, type: 3}
+  whiteBishop: {fileID: 5201298834311241967, guid: 37c2339cbaac449dd93ce1f9993218c3, type: 3}
+  whiteQueen: {fileID: 6886281489177588762, guid: ac1e2c33698f6437795c98155d0a36ed, type: 3}
+  whiteKing: {fileID: 5767927273582226585, guid: 6294554619e404a64a12699983ab346c, type: 3}
+  whitePawn: {fileID: 4760013650986469871, guid: 72d4dffa0c53b41e68a830ac593ba767, type: 3}
+  blackRook: {fileID: 4779431383289791843, guid: 0a3737218970b4e7fae9f502308751e6, type: 3}
+  blackKnight: {fileID: 8026481002746751422, guid: fcc1362666c7347afb2e52958c2bd0f9, type: 3}
+  blackBishop: {fileID: 6984342256134141517, guid: 3047f474107b9404d89585e17c14aae3, type: 3}
+  blackQueen: {fileID: 4695059922242812029, guid: 799ebb9dddf284118adfc91149bfd848, type: 3}
+  blackKing: {fileID: 6470896598107590031, guid: 26925df929e7241d699e10060008cfc6, type: 3}
+  blackPawn: {fileID: 7308438122874930477, guid: 1d57b2d6417ce4450bf5b31d8622d53c, type: 3}
+  squares:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &1837620654
 Transform:
   m_ObjectHideFlags: 0
