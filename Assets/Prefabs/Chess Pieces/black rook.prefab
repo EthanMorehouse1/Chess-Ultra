@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2483365601022146202}
   - component: {fileID: 957974585973577880}
   - component: {fileID: 1080374182982268741}
+  - component: {fileID: -5246649556053637013}
   m_Layer: 0
   m_Name: black rook
   m_TagString: Rook
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-5246649556053637013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4779431383289791843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c58634def094758aa21d4a05020d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

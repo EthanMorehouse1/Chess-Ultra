@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PieceMove : MonoBehaviour
 {
-    
+    public GameObject selectedSpace;
+    public float spaceInArray;
     void Start()
     {
         
@@ -17,12 +18,42 @@ public class PieceMove : MonoBehaviour
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            Debug.Log("Mouse Clicked");
 
             if (hit.collider != null) 
             {
+                selectedSpace = hit.collider.gameObject;
+
                 
-            Debug.Log("Something was clicked!");
+                if(selectedSpace.CompareTag("PawnWhite"))
+                {
+
+                }
+                else if(selectedSpace.CompareTag("PawnBlack"))
+                {
+
+                }
+                else if(selectedSpace.CompareTag("Rook"))
+                {
+                    
+                }
+                else if(selectedSpace.CompareTag("Bishop"))
+                {
+                    
+                }
+                else if(selectedSpace.CompareTag("Knight"))
+                {
+                    
+                }
+                else if(selectedSpace.CompareTag("King"))
+                {
+                    
+                }
+                else if(selectedSpace.CompareTag("Queen"))
+                {
+                    
+                }
+
+                Debug.Log("Something was clicked!");
             }
         }
     }

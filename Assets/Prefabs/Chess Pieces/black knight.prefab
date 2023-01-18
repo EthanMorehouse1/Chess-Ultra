@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1753681372108455593}
   - component: {fileID: 5828536658807403854}
   - component: {fileID: -5202005880405901509}
+  - component: {fileID: 6297071232264013942}
   m_Layer: 0
   m_Name: black knight
   m_TagString: Knight
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6297071232264013942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026481002746751422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c58634def094758aa21d4a05020d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

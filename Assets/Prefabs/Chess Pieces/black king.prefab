@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3626592582139995718}
   - component: {fileID: 1984180311470759792}
   - component: {fileID: 8692745985250766143}
+  - component: {fileID: -3165784703771078697}
   m_Layer: 0
   m_Name: black king
   m_TagString: King
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-3165784703771078697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6470896598107590031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c58634def094758aa21d4a05020d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

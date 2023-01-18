@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4176238653685942551}
   - component: {fileID: 1339926522425237951}
   - component: {fileID: -777471948543429911}
+  - component: {fileID: 319173598675208931}
   m_Layer: 0
   m_Name: white queen
   m_TagString: Queen
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &319173598675208931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886281489177588762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c58634def094758aa21d4a05020d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
